@@ -1,6 +1,12 @@
 /* App.css */
 .app-container {
+  width: 90vw;
   margin: 20px;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
 }
 
 table {
@@ -21,7 +27,7 @@ th {
 }
 
 tr.selected {
-  background-color: green;
+  background-color: rgba(221, 211, 211, 0.752);
 }
 
 div {
@@ -52,4 +58,10 @@ input[type="text"] {
 
 .disable {
   background-color: green;
+}
+
+
+img {
+  height: 20px;
+  cursor: pointer;
 }

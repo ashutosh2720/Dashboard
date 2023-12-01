@@ -68,8 +68,9 @@ const Table = ({
               ) : (
                 <>
                  
-                  <button onClick={() => onEditRow(user.id)}>Edit</button>
-                  <button onClick={() => onDeleteRow(user.id)}>Delete</button>
+                  <img className='edit' onClick={() => onEditRow(user.id)} src="https://banner2.cleanpng.com/20180319/ysw/kisspng-computer-icons-editing-vector-graphics-editor-edit-pen-write-icon-5ab06a2456fa55.3095970115215109483563.jpg" alt="edit" />
+                 
+                  <img onClick={() => onDeleteRow(user.id)} src="https://w7.pngwing.com/pngs/29/45/png-transparent-delete-key-logo-button-text-rectangle-logo.png" alt="" />
                 </>
               )}
             </td>

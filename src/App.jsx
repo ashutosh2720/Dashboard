@@ -83,6 +83,8 @@ const App = () => {
     setCurrentPage(pageNumber);
   };
 
+
+  
   // Filter users based on search term
   const filteredUsers = users.filter(user =>
     user.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -96,7 +98,10 @@ const App = () => {
 
   return (
     <div className="app-container">
-      <SearchBar onSearch={handleSearch} />
+     <div className="nav">
+     <SearchBar onSearch={handleSearch} />
+      <button onClick={handleDeleteSelected}>Delete Selected</button>
+     </div>
       <Table
         users={currentUsers}
         selectedRows={selectedRows}
@@ -106,6 +111,9 @@ const App = () => {
         onCancelEdit={handleCancelEdit}
         editUserId={editUserId}
         editName={editName}
+        setEditName={setEditName}
+        setEditEmail={setEditEmail}
+
         editEmail={editEmail}
         onDeleteRow={handleDeleteRow}
       />
@@ -116,7 +124,7 @@ const App = () => {
         rowsPerPage={rowsPerPage}
         onPageChange={handlePagination}
       />
-      <button onClick={handleDeleteSelected}>Delete Selected</button>
+      
     </div>
   );
 };
