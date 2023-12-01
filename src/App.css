@@ -1,0 +1,55 @@
+/* App.css */
+.app-container {
+  margin: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr.selected {
+  background-color: green;
+}
+
+div {
+  margin-top: 10px;
+}
+
+button {
+  margin-right: 5px;
+  background-color: rgb(229, 60, 60);
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  margin: 4px;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  height: 30px;
+  padding-left: 5px;
+  border-radius: 5px;
+  border: 0.01px solid gray;
+  outline: none;
+}
+
+.disable {
+  background-color: green;
+}
